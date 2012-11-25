@@ -1,5 +1,5 @@
 //
-//  AmeriPrideViewController.h
+//  AmeriPrideEditViewController.h
 //  AmeriPride
 //
 //  Created by Aaron C Wright on 11/25/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AmeriPrideViewController : UIViewController
+@interface AmeriPrideEditViewController : UIViewController
 
 @end

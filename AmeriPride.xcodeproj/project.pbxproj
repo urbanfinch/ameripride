@@ -17,7 +17,10 @@
 		4521A3A81662CB9900FF1BB3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4521A3A71662CB9900FF1BB3 /* Default@2x.png */; };
 		4521A3AA1662CB9900FF1BB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4521A3A91662CB9900FF1BB3 /* Default-568h@2x.png */; };
 		4521A3AD1662CB9900FF1BB3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4521A3AB1662CB9900FF1BB3 /* MainStoryboard.storyboard */; };
-		4521A3B01662CB9900FF1BB3 /* AmeriPrideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4521A3AF1662CB9900FF1BB3 /* AmeriPrideViewController.m */; };
+		4521A3D21662D17F00FF1BB3 /* AmeriPrideWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4521A3CD1662D10A00FF1BB3 /* AmeriPrideWebViewController.m */; };
+		4521A3D81662D2C800FF1BB3 /* AmeriPrideEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4521A3D71662D2C800FF1BB3 /* AmeriPrideEditViewController.m */; };
+		4521A3DB1662D34500FF1BB3 /* AmeriPrideWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4521A3DA1662D34500FF1BB3 /* AmeriPrideWebView.m */; };
+		4521A3DD1662D59A00FF1BB3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4521A3DC1662D59A00FF1BB3 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,13 @@
 		4521A3A71662CB9900FF1BB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4521A3A91662CB9900FF1BB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4521A3AC1662CB9900FF1BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		4521A3AE1662CB9900FF1BB3 /* AmeriPrideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmeriPrideViewController.h; sourceTree = "<group>"; };
-		4521A3AF1662CB9900FF1BB3 /* AmeriPrideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmeriPrideViewController.m; sourceTree = "<group>"; };
+		4521A3CC1662D10A00FF1BB3 /* AmeriPrideWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmeriPrideWebViewController.h; sourceTree = "<group>"; };
+		4521A3CD1662D10A00FF1BB3 /* AmeriPrideWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmeriPrideWebViewController.m; sourceTree = "<group>"; };
+		4521A3D61662D2C800FF1BB3 /* AmeriPrideEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmeriPrideEditViewController.h; sourceTree = "<group>"; };
+		4521A3D71662D2C800FF1BB3 /* AmeriPrideEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmeriPrideEditViewController.m; sourceTree = "<group>"; };
+		4521A3D91662D34500FF1BB3 /* AmeriPrideWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmeriPrideWebView.h; sourceTree = "<group>"; };
+		4521A3DA1662D34500FF1BB3 /* AmeriPrideWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmeriPrideWebView.m; sourceTree = "<group>"; };
+		4521A3DC1662D59A00FF1BB3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +94,9 @@
 				4521A3A21662CB9900FF1BB3 /* AmeriPrideAppDelegate.h */,
 				4521A3A31662CB9900FF1BB3 /* AmeriPrideAppDelegate.m */,
 				4521A3AB1662CB9900FF1BB3 /* MainStoryboard.storyboard */,
-				4521A3AE1662CB9900FF1BB3 /* AmeriPrideViewController.h */,
-				4521A3AF1662CB9900FF1BB3 /* AmeriPrideViewController.m */,
 				4521A39A1662CB9900FF1BB3 /* Supporting Files */,
+				4521A3D41662D1F900FF1BB3 /* Controllers */,
+				4521A3D51662D20A00FF1BB3 /* Views */,
 			);
 			path = AmeriPride;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 		4521A39A1662CB9900FF1BB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4521A3DC1662D59A00FF1BB3 /* Settings.bundle */,
 				4521A39B1662CB9900FF1BB3 /* AmeriPride-Info.plist */,
 				4521A39C1662CB9900FF1BB3 /* InfoPlist.strings */,
 				4521A39F1662CB9900FF1BB3 /* main.m */,
@@ -105,6 +114,26 @@
 				4521A3A91662CB9900FF1BB3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4521A3D41662D1F900FF1BB3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4521A3CC1662D10A00FF1BB3 /* AmeriPrideWebViewController.h */,
+				4521A3CD1662D10A00FF1BB3 /* AmeriPrideWebViewController.m */,
+				4521A3D61662D2C800FF1BB3 /* AmeriPrideEditViewController.h */,
+				4521A3D71662D2C800FF1BB3 /* AmeriPrideEditViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4521A3D51662D20A00FF1BB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4521A3D91662D34500FF1BB3 /* AmeriPrideWebView.h */,
+				4521A3DA1662D34500FF1BB3 /* AmeriPrideWebView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +193,7 @@
 				4521A3A81662CB9900FF1BB3 /* Default@2x.png in Resources */,
 				4521A3AA1662CB9900FF1BB3 /* Default-568h@2x.png in Resources */,
 				4521A3AD1662CB9900FF1BB3 /* MainStoryboard.storyboard in Resources */,
+				4521A3DD1662D59A00FF1BB3 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +206,9 @@
 			files = (
 				4521A3A01662CB9900FF1BB3 /* main.m in Sources */,
 				4521A3A41662CB9900FF1BB3 /* AmeriPrideAppDelegate.m in Sources */,
-				4521A3B01662CB9900FF1BB3 /* AmeriPrideViewController.m in Sources */,
+				4521A3D21662D17F00FF1BB3 /* AmeriPrideWebViewController.m in Sources */,
+				4521A3D81662D2C800FF1BB3 /* AmeriPrideEditViewController.m in Sources */,
+				4521A3DB1662D34500FF1BB3 /* AmeriPrideWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +292,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmeriPride/AmeriPride-Prefix.pch";
 				INFOPLIST_FILE = "AmeriPride/AmeriPride-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,6 +304,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmeriPride/AmeriPride-Prefix.pch";
 				INFOPLIST_FILE = "AmeriPride/AmeriPride-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -295,6 +329,7 @@
 				4521A3B51662CB9900FF1BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

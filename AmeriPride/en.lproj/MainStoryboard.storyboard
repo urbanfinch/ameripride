@@ -1,23 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="zwS-KF-PYe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="4">
+        <!--Navigation Controller-->
+        <scene sceneID="viD-sF-WAW">
             <objects>
-                <viewController id="2" customClass="AmeriPrideViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <navigationController definesPresentationContext="YES" id="zwS-KF-PYe" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="MU8-kn-YS6">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vmm-aa-e8j" kind="relationship" relationship="rootViewController" id="a3z-HV-7h8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emp-xk-Nff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1585" y="-527"/>
+        </scene>
+        <!--Ameri Pride Web View Controller - AmeriPride-->
+        <scene sceneID="HoK-8Z-rrG">
+            <objects>
+                <viewController id="vmm-aa-e8j" customClass="AmeriPrideWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PFC-c9-bPy">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvg-Vr-woz" customClass="AmeriPrideWebView">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uvg-Vr-woz" firstAttribute="top" secondItem="PFC-c9-bPy" secondAttribute="top" type="default" id="RTN-o7-LzZ"/>
+                            <constraint firstItem="Uvg-Vr-woz" firstAttribute="bottom" secondItem="PFC-c9-bPy" secondAttribute="bottom" type="default" id="rmO-e3-plX"/>
+                            <constraint firstItem="Uvg-Vr-woz" firstAttribute="leading" secondItem="PFC-c9-bPy" secondAttribute="leading" type="default" id="vAm-6j-JQH"/>
+                            <constraint firstItem="Uvg-Vr-woz" firstAttribute="trailing" secondItem="PFC-c9-bPy" secondAttribute="trailing" type="default" id="zDb-nx-n28"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AmeriPride" id="Egk-PJ-dYp">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="up3-aO-17p"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="t61-D5-2Gc">
+                            <connections>
+                                <segue destination="9st-IB-Z9V" kind="push" identifier="Edit" id="sDI-nv-YY4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="Uvg-Vr-woz" id="HUK-va-dbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbB-c4-1tj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-544" y="-527"/>
+        </scene>
+        <!--Ameri Pride Edit View Controller - Edit-->
+        <scene sceneID="ZkQ-tt-K6f">
+            <objects>
+                <viewController id="9st-IB-Z9V" customClass="AmeriPrideEditViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Csc-Ag-yYs">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Edit" id="2UQ-as-nVM"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5V-Fb-45i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="476" y="-527"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="AmeriPrideEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmeriPrideEditViewController.h"/>
+        </class>
+        <class className="AmeriPrideWebView" superclassName="UIWebView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmeriPrideWebView.h"/>
+        </class>
+        <class className="AmeriPrideWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmeriPrideWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
