@@ -1,3 +1,6 @@
 [submodule "ameripride.application"]
 	path = ameripride.application
 	url = git@github.com:urbanfinch/ameripride.application.git
+[submodule "ameripride.demo"]
+	path = ameripride.demo
+	url = git@github.com:urbanfinch/ameripride.demo.git
