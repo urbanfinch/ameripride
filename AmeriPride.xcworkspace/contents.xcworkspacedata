@@ -4,7 +4,4 @@
    <FileRef
       location = "group:ameripride.salesforce/AmeriPride Salesforce.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:ameripride.demo/AmeriPride Demo.xcodeproj">
-   </FileRef>
 </Workspace>
