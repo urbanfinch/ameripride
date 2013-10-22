@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E180AF47-3A43-4D8A-BA10-72859F6D224F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AmeriPride</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>11E28F41-568A-41F5-8B43-D6F0A3ABD0B4</key>
+		<string>ssh://github.com/urbanfinch/ameripride.salesforce.git</string>
+		<key>15E8ACB9-783E-4D19-84E3-1E080400ED7F</key>
+		<string>ssh://github.com/urbanfinch/ameripride.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AmeriPride.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>11E28F41-568A-41F5-8B43-D6F0A3ABD0B4</key>
+		<string>../ameripride.salesforce</string>
+		<key>15E8ACB9-783E-4D19-84E3-1E080400ED7F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/urbanfinch/ameripride.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>15E8ACB9-783E-4D19-84E3-1E080400ED7F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15E8ACB9-783E-4D19-84E3-1E080400ED7F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ameripride</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11E28F41-568A-41F5-8B43-D6F0A3ABD0B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ameripride</string>
+		</dict>
+	</array>
+</dict>
+</plist>
