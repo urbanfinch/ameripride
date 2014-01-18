@@ -4,4 +4,7 @@
    <FileRef
       location = "group:ameripride.salesforce/AmeriPride Salesforce.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:canadianlinen.salesforce/Canadian Linen Salesforce.xcodeproj">
+   </FileRef>
 </Workspace>

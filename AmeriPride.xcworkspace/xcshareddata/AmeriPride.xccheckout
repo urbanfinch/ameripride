@@ -14,6 +14,8 @@
 		<string>ssh://github.com/urbanfinch/ameripride.salesforce.git</string>
 		<key>15E8ACB9-783E-4D19-84E3-1E080400ED7F</key>
 		<string>ssh://github.com/urbanfinch/ameripride.git</string>
+		<key>CBA88556-BD36-4245-8386-0308E1D465DB</key>
+		<string>https://github.com/urbanfinch/canadianlinen.salesforce.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AmeriPride.xcworkspace</string>
@@ -23,6 +25,8 @@
 		<string>../ameripride.salesforce</string>
 		<key>15E8ACB9-783E-4D19-84E3-1E080400ED7F</key>
 		<string>..</string>
+		<key>CBA88556-BD36-4245-8386-0308E1D465DB</key>
+		<string>../canadianlinen.salesforce</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/urbanfinch/ameripride.git</string>
@@ -47,6 +51,14 @@
 			<string>11E28F41-568A-41F5-8B43-D6F0A3ABD0B4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ameripride</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CBA88556-BD36-4245-8386-0308E1D465DB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>canadianlinen</string>
 		</dict>
 	</array>
 </dict>
