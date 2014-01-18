@@ -7,3 +7,6 @@
 [submodule "ameripride.salesforce"]
 	path = ameripride.salesforce
 	url = git@github.com:urbanfinch/ameripride.salesforce.git
+[submodule "canadianlinen.salesforce"]
+	path = canadianlinen.salesforce
+	url = https://github.com/urbanfinch/canadianlinen.salesforce.git
